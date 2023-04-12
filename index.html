@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Form</title>
+  </head>
+  <body>
+    <div id="main">
+      <form id="myForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName"><br><br>
+
+        <label for="middleName">Middle Name:</label>
+        <input type="text" id="middleName" name="middleName"><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"></textarea><br><br>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      function submitForm() {
+        const firstName = document.getElementById("firstName").value;
+        const middleName = document.getElementById("middleName").value;
+        const lastName = document.getElementById("lastName").value;
+        const email = document.getElementById("email").value;
+        const address = document.getElementById("address").value;
+
+        console.log("First Name: " + firstName);
+        console.log("Middle Name: " + middleName);
+        console.log("Last Name: " + lastName);
+        console.log("Email: " + email);
+        console.log("Address: " + address);
+      }
+    </script>
+  </body>
+</html>
